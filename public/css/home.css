@@ -1,0 +1,430 @@
+/*** CSS for home page ***/
+/* imports for fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Noto+Serif+Display:ital@1&display=swap');
+
+/*** Removes default style from links ***/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/** Some color classes  **/
+
+.linkColor {
+	color: #5088e9;
+}
+
+.transparent{
+    /* Can use to hide ids */
+    color: transparent;
+}
+
+/** Some text classes  **/
+
+.fancychar1 {
+    font-family: 'Lobster', cursive;
+}
+
+.fancychar2 {
+    font-family: 'Noto Serif Display', serif;
+}
+
+.textDecoration{
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+}
+
+.textDecoration2{
+    text-decoration: underline;
+    font-family: 'Noto Serif Display', serif;
+    text-align:center;
+}
+
+.justify{
+    /* for paragraphs*/
+    text-align: justify;
+}
+
+
+/************** top Menu ***************/
+
+.logoContainer {
+	position: relative;
+	width: 80px;
+    height: 27px;
+	float:left;
+}
+
+.logo {
+	margin-left: 20px;
+	margin-right: 10px;
+	border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    
+}
+
+#topMenu {
+	background-color: white;
+    width:100%;
+    height:auto;
+}
+
+#topMenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    white-space: nowrap;
+}
+
+#topMenu li {
+    display: inline-block;
+    max-width: 10%;
+}
+
+#topMenu li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size:small;
+}
+
+#topMenu li:last-child {
+    float:right;
+    background-color: grey;
+}
+
+#topMenu li.quit{
+    float:right;
+}
+
+#topMenu li a:hover {
+    background-color: #ccc;
+  }
+
+.active {
+    background-color: grey;
+}
+
+
+/*phase2*/
+#topMenu li.top_book{
+    margin-left:8%;
+    max-width: none;
+}
+#topMenu li.top_list{
+    margin-left:8%;
+    max-width: none;
+}
+
+.search-book{
+    margin-left: 32%;   
+    width: 200px;
+    z-index: 1;
+    float:left;
+    position:absolute;
+}
+
+.search-list{
+    margin-left: 51%;
+    width: 200px;
+    z-index: 1;
+    float:left;
+    position:absolute;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 13.5px;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+  
+.dropbtn:focus {
+    background-color: #ccc
+  }
+  
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 14px 12px 12px;
+    border: none;
+    background-color: whitesmoke;
+    border-bottom: 1px solid #ddd;
+    width: 200px;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: block;
+    font-size: small;
+    background-color: white;
+    border: 1px solid #ddd;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .hide {
+    display:none;
+}
+
+ 
+/*For admins manage posts*/
+  .postdropdown {
+    position: relative;
+    display: inline-block;
+    font-size: small;
+  }
+
+  .postdropdown #myInput {
+    font-size: small;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .postdropdown-content {
+    display: block;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+  }
+  
+
+  .postdropdown-content option {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  .postdropdown-content option:hover {
+      background-color: #ccc;
+      cursor: pointer;
+    }
+
+
+/********** welcome **********/
+.welcome{
+    margin-left: 50px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+
+
+/********** recommendation **********/
+#recommendation {
+	padding: 5px;
+	background-color: white;
+    z-index: -1;
+}
+
+.TopBookcontainer{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.Topbook{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.TopbookCover{
+    height: 200px;
+    float:right;
+    margin-bottom: 2px;
+    margin-left:5px;
+    border:2px solid white;
+}
+
+.RecommendationbookCover{
+    height: 200px;
+    width: 150px;
+    margin-bottom: 2px;
+    margin-left:5px;
+    border:2px solid black;
+}
+
+#adminActionsWrap{
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.bookTitle {
+	padding: 3px;
+	background-color: white;
+}
+
+.bookId{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.bookAuthor{
+    font-size:large;
+}
+
+.bookCover {
+	margin-left: 10px;
+	margin-right: 10px;
+
+    width: 70%;
+    height: 70%;
+}
+
+
+/********** Posts **********/
+#posts{
+    margin-top: 20px;
+    padding: 5px;
+	background-color: white;
+    z-index: -1;
+}
+
+#posts .textDecoration2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Noto Serif Display', serif;
+    border-bottom: 2px solid rgb(199, 196, 196);
+}
+
+
+#posts ul li{
+    list-style-type: none;
+	/* display: block; */
+    margin-left: 145px;
+}
+
+.post {
+	min-height: 200px;
+	overflow: auto;
+	padding-bottom: 5px;
+    background-color: white;
+    margin-top:10px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.postId{
+    color:transparent; /* hide id */
+    font-size: small;
+    float:right;
+}
+
+.postIdadmin{
+    font-size: small;
+    float:right;
+}
+
+#posts .bookId{
+    color:transparent; /* hide id */
+}
+
+.userProfileContainer {
+    margin-top: 20px;
+	width: 80px;
+	float:left;
+}
+
+.userProfile {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+.postTime{
+    float:right;
+}
+
+.postContent {
+	margin-top: 20px;
+	width: 400px;
+	float: left;
+    margin-bottom: 5px;
+}
+
+
+.postContentPicture {
+	max-width: 400px;
+}
+
+.adminManage{
+    margin-left:200px;
+    width: 500px;
+}
+
+
+#modify_post_button{
+    float:right;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.like, .dislike, .collect, .collected, .delete{   
+    float:right;
+    margin-right: 5px;
+}
+
+#posts h5{
+    padding-top: 10px;
+}
+
+.fa-heart {
+    color:black;
+} 
+
+#posts .delete:hover {
+    background-color: red;
+  }
+
+/*
+    * Footer
+ */
+ .blog-footer {
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5; 
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+ #myBtn{
+     margin-left: 45%;
+ } 

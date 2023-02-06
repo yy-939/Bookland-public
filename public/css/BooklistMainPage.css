@@ -1,0 +1,272 @@
+@import "./home.css"; 
+
+#booklistTable {
+    top: 60px;
+    width: 100%;
+    background: white;
+    padding-left: 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    border: 2px solid rgb(116, 116, 116);
+    padding: 5px;
+}
+
+.textDecoration{
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+    text-align:left;
+}
+
+.booklist{
+    left: 0%;
+    top: 0px;
+    margin-bottom: 1.5rem!important;
+    flex: 0 0 auto;
+    width: 800px;
+    min-height: 300px;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    box-sizing: border-box;
+    display: block;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    background-color: gainsboro;
+    background-image: linear-gradient(180deg,#f1f1f1, #ffffff);
+    font-family: 'Lobster', cursive;
+    border: rgba(255, 255, 255, 0) 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 0.50rem 0.50rem rgba(0,0,0,.075)!important;
+}
+
+.infoWrap{
+    width: 700px;
+    min-height: 50px;
+    display: flex;
+}
+.listname, .listCreator, .createTime {
+    min-width: 40px;
+    list-style: none;
+    text-align: left;
+    margin: 10px 10px 10px 0;
+    font-size: large;
+}
+
+.iconWrap{
+    list-style:none;
+    position: relative;
+    float: right;
+    bottom: 60px;
+    display: flex;
+    margin-right: 20px;
+}
+.infoElement{
+    width: 150px;
+    height: 50px;
+}
+.likeIcon, .collectIcon{
+    width: 30px;
+    height: auto;
+    float: top;
+}
+
+.likeNum, .collectNum{
+    width: 85px;
+    font-size: small;
+    float: bottom;
+    margin-left: 5px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.likedButton, .collectedButton{
+    width: 85px;
+    font-size: small;
+    float: bottom;
+    margin-left: 5px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+.bookshelf{
+    text-align:center;
+}
+
+.bookshelf{
+    background: url("../img/static/bookshelf.png");
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    width: 400px;
+    margin-left: 50px;
+}
+.bookimg{
+    width: 50px;
+    display: inline-block;
+    margin: 5px;
+    text-align:center;
+}
+
+.book, .booklink{
+	color: #5088e9;
+    margin-top: 5px;
+    font-family:'Noto Serif Display', serif;
+    font-size: small;
+}
+
+
+.descriptionsBox {
+    width: 600px;
+    min-height: 50px;
+    padding-left: 45px;
+    font-size: medium;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.listID {
+    float: left;
+    height: 30px;
+    width: 780px;
+    margin: auto;
+}
+
+.delete{
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: small;
+}
+
+#sort_a_z, #sort_default{
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: small;
+}
+
+.divideLine{
+    z-index: -1;
+    border: .5px solid rgb(192, 192, 192);
+    margin-bottom: 8px;
+}
+
+#pageFliper{
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+#tableResult{
+    margin: auto;
+}
+
+.normalTR{
+    display: block;
+}
+
+.endTR{
+    display: none;
+}
+
+/* new for phase2 */
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin: 0px auto;
+  position: fixed;
+  background-color: white;
+  width: 70%;
+  top:50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  box-shadow:0 0 800px 800px rgba(153, 153, 153, 0.521);
+}
+.div_form{
+    display: inline-block;
+    width:50%;
+    height: 100%;
+    background-color: white;
+}
+
+/* Add styles to the form container */
+.form-container {
+  padding: 10px;
+  background-color: white;
+  border-right: #ddd 2px solid;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+#submit_delete, #cancel{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel ,#cancel{
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+#youmaylike{
+    float: right;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+}
+#randomBooks{
+    list-style: none;
+    top:1px;
+    right: 1px;
+    padding: 10px;
+    height: 100%;
+    vertical-align: middle;
+}
+#bookButton{
+    bottom: 0;
+    position: relative;
+    top: 50%;
+}
+.addListID{
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 70%;
+    border: transparent !important;
+}
+
+.bookIDhide, #dom_display{
+    display: none;
+}

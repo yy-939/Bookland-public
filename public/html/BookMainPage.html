@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       <title>Book Main</title>
+       <link rel="stylesheet" type="text/css" href="../css/BookMainPage.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For icons -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    </head>
+    <body>
+     <!-- The Top Menu -->
+     <div id="topMenu">
+        <ul>
+            <li>
+                <div class="logoContainer">
+                  <img class="logo" src="/public/img/static/bookLandLogo.png" alt="logo">
+                </div>
+            </li>
+            <!-- New -->
+            <li><a href=''>Home</a></li>
+            <li><a class="active" href=''>Books</a></li>
+            <li><a href=''>Booklists</a></li>
+            <li class="top_book">
+                <div class="dropdown">
+                    <button onclick="bookFunction()" class="dropbtn">Search for books</button>
+                  </div>
+            </li>
+            <li class="top_list">
+                <div class="dropdown">
+                    <button onclick="listFunction()" class="dropbtn">Search for lists</button>
+                  </div>
+            </li>
+          </ul>
+  </div>
+  <div class="search-book">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_bookfilterFunction()">
+      </span>
+    </div>
+  </div>
+  <div class="search-list">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_listfilterFunction()">
+      </span>
+      <ul id="dom_display">
+        <li class="quit">
+            <a href="../HomeAndLogin/index.html">QUIT</a>
+        </li>
+        <li>
+            <a id="userLoginInfo" class="addUserIdToLink" href="../HomeAndLogin/login.html">Login/Register</a>
+        </li>
+    </ul>
+
+    </div>
+  </div>
+
+
+    <!-- books-->
+    <div id="bookTable">
+        <h2 class="textDecoration"> All Books:</h2>
+        <div id="adminActionsWrap">
+            <h4>Admin Actions:</h4>
+            <form id="addBook" class="addBook">
+                <span>    Add book</span>
+                <input id="bookNameInput" type="text" placeholder="Book Name*" required>
+                <input id="bookAuthorInput" type="text" placeholder="Author*" required>
+                <input id="publishYearInput" type="number" min="0000" max="2022" placeholder="Pub.*" required>
+                <input id="descriptionInput" type="text" placeholder="Description...*"required>
+                <input id="coverInput" type="url" placeholder="Cover URL (OPT)"> 
+                <input id="addButton" class="addSubmit, btn btn-primary" type = "submit" value="Add">
+            </form>
+            <div id="addMessage">
+                <span id='reflect' ></span>
+            </div>
+        </div>
+        <br>
+        <div class="divideLine"></div>
+        <table id="tableResult">
+            <tbody id="tableResultTBODY">
+            </tbody>
+        </table>
+        <!-- pages -->
+        <div id='pageFliper'>
+            <nav aria-label="pageFliperAL">
+             <ul id='pageFliperUL' class="pagination"></ul>
+             </nav> 
+         </div>
+    </div>
+
+    <!-- footer-->
+    <footer class="blog-footer">
+        <p><i>&copy; BookLand built by team10</i></p>
+        <p>
+            <!-- NEW ADDED -->	
+            <button onclick="topFunction()" id="myBtn" class="btn btn-outline-primary">Back to Top</button>
+        </p>
+    </footer>  
+    <script type="text/javascript" src="../js/topmenu.js"></script>
+    <script type="text/javascript" src="../js/BookMainPage.js"></script>
+    </body>
+</html>

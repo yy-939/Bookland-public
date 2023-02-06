@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+ 	<meta charset="utf-8">
+    <title>BookLand</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/login.css">
+    <!-- For bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--<link href="../bootstrap-dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ </head>
+
+ <body>
+<!--Login Form for Login section -->
+<div class='back'><button type="button" class="btn btn-dark" onclick='window.location = "/index.html"'>Back to home page</button></div>
+<br>
+<img class="logo" src="/public/img/static/bookLandLogo.png" alt="logo">
+<div class="Login">
+    <div class="form">
+        <h2> Log in </h2>
+            <div class="form-element">
+                <label for="username">username</label>
+                <!--Max length of username is 10 -->
+                <input type="text" id="username" maxlength = '10' placeholder="username"> 
+            </div>
+            <div class="form-element">
+                <label for="password">password</label>
+                <!--Max length of password is 10 -->
+                <input type="password" id="password" maxlength = '10' placeholder="password">
+            </div>
+        <div class="form-element">
+            <p></p>
+            <button id="signin">Sign in</button>
+        </div>
+        <h5>Doesn't have an account? <span class='register'><button type="button" class="btn btn-dark" onclick='window.location = "/public/html/register.html"'>Register</button></span></h5>
+        
+        
+    <div class="blog-footer">
+        <i>&copy; BookLand built by team10</i>
+    </div>
+</div>
+
+<script type="text/javascript" src="/public/js/login.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       <title>BookLand</title>
+       <link rel="stylesheet" type="text/css" href="../css/user.css">
+       <!-- For reference -->
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">
+
+      <!-- For bootstrap -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"> 
+      
+      <!-- For icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+
+  <body>
+    <!-- for back to top-->
+    <a id="tips"></a>
+    <!-- The Top Menu -->
+    <div id="topMenu">
+      <ul>
+          <li>
+              <div class="logoContainer">
+                <img class="logo" src="/public/img/static/bookLandLogo.png" alt="logo">
+              </div>
+          </li>
+          <!-- New -->
+          <li><a class="active" href=''>Home</a></li>
+          <li><a href=''>Books</a></li>
+          <li><a href=''>Booklists</a></li>
+          <li class="top_book">
+              <div class="dropdown">
+                  <button onclick="bookFunction()" class="dropbtn">Search for books</button>
+                </div>
+          </li>
+          <li class="top_list">
+              <div class="dropdown">
+                  <button onclick="listFunction()" class="dropbtn">Search for lists</button>
+                </div>
+          </li>
+        </ul>
+  </div>
+  <div class="search-book">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_bookfilterFunction()">
+      </span>
+    </div>
+  </div>
+  <div class="search-list">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_listfilterFunction()">
+      </span>
+    </div>
+  </div>
+
+
+
+  <!-- User Info -->
+  <div id="userMainPage">
+    <div id="userInfo">
+      <div class="profilePicContainer"><img class="profilePic" src="" alt=""></div>
+      <div id="username">User </div>
+      <div id="id">0</div>
+      <div id="signature">Say something about yourself ... </div>
+      <button id="profileButton" class='btn btn-dark'>Edit Signature</button>
+      <!-- The left menu -->
+    </div>
+   
+    <div id="menu">
+      <div id="menubar">
+        <ul>
+          <li><button class="selected btn btn-dark">Posts</button></li>
+          <li><button class="btn btn-light">Booklists</button></li>
+          <li><button class="btn btn-light">Post Collections</button></li>
+          <li><button class="btn btn-light">Booklist Collections</button></li>
+        </ul>
+      </div>
+      <div id="contents">
+        <ul id='contentBody'>
+        </ul>
+        <div id="pageFliper"></div> 
+      </div>
+    </div>
+  </div>
+  <!-- NEW ADDED -->
+  <footer class="blog-footer">
+    <p><i>&copy; BookLand built by team10</i></p>
+    <p>
+        <button onclick="topFunction()" id="myBtn" class="btn btn-outline-primary">Back to Top</button>
+    </p>
+</footer>
+  <script type="text/javascript" src="../js/user.js"></script>
+  <script type="text/javascript" src="../js/topmenu.js"></script>
+  </body>
+</html>
+

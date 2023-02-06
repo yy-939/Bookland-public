@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+ 	<meta charset="UTF-8">
+    <title> BookLand: booklist</title>
+    <link rel="stylesheet" type="text/css" href="../css/BooklistDetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ </head>
+
+<body>
+     <!-- The Top Menu -->
+     <div id="topMenu">
+        <ul>
+            <li>
+                <div class="logoContainer">
+                  <img class="logo" src="/public/img/static/bookLandLogo.png" alt="logo">
+                </div>
+            </li>
+            <li><a href=''>Home</a></li>
+            <li><a href=''>Books</a></li>
+            <li><a href=''>Booklists</a></li>
+            <li class="top_book">
+                <div class="dropdown">
+                    <button onclick="bookFunction()" class="dropbtn">Search for books</button>
+                  </div>
+            </li>
+            <li class="top_list">
+                <div class="dropdown">
+                    <button onclick="listFunction()" class="dropbtn">Search for lists</button>
+                  </div>
+            </li>
+          </ul>
+  </div>
+  <div class="search-book">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_bookfilterFunction()">
+      </span>
+    </div>
+  </div>
+  <div class="search-list">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_listfilterFunction()">
+      </span>
+      <ul id="dom_display">
+        <li class="quit">
+            <a href="../HomeAndLogin/index.html">QUIT</a>
+        </li>
+        <li>
+            <a id="userLoginInfo" class="addUserIdToLink" href="../HomeAndLogin/login.html">Login/Register</a>
+        </li>
+    </ul>
+
+    </div>
+  </div>
+
+     <!-- booklist detail -->
+     <div id="booklistInfo">
+        <h1 class = title> Booklist: </h1>
+        <br>
+        <p id="booklistIntro">
+            <span class="listId">BooklistID: </span><br>
+            <span class="creator">Creator: </span><br>
+            <span class="createTime">Created When: </span>
+        </p>
+        <br>
+        <p id="likesAndCollects">
+            <span class="listName">Booklist Name: </span><br>
+            <span class="likes">Liked: </span><br>
+            <span class="collects">Collected: </span><br>
+        </p>
+     </div>
+
+     <div id="description">
+        <strong class="des">Description: </strong><br> 
+     </div>
+
+    <div id="books">
+        <h3 class="title">Books in the list: </h3>
+        <br>
+        <ul id="bookUL"></ul>
+    </div> 
+
+    <div class="form-popup" id="myForm_editBooks">
+        <div class="div_form">
+        <form action="/action_page.php" class="form-container">
+          <h5>Create your collections...</h5>
+
+          <label for="booklists"><b>Booklist IDs</b></label>
+          <input type="text" id='editBooks_input' placeholder="Please use ; to seperate." name="booklists" required>
+          <small id="message_editBooks" class="form-text text-muted"></small>
+      
+          <button id='submit_editBooks' type="submit" class="addSubmit, btn">Create</button>
+          <button id='cancel_editBooks' type="button" class="btn cancel">Cancel</button>
+        </form>
+        </div>
+        <div class="div_form" id="youmaylike">
+            <h5>Choose books to load in your booklist...</h5>
+            <ul id='randomBooks'>
+                <li><button type="submit" class="addListID btn btn-outline-info"></button></li>
+                <li><button type="submit" class="addListID btn btn-outline-info"></button></li>
+                <li><button type="submit" class="addListID btn btn-outline-info"></button></li>
+            </ul>
+            <br>
+            <h6>Click me for exploring books we have.</h6>
+            <br>
+            <button id='bookButton' type="submit" class="btn btn-secondary" onclick="changeBooks()">Browser some books</button>
+        </div>
+    </div>
+
+    <!-- footer-->
+    <footer class="blog-footer">
+        <p><i>&copy; BookLand built by team10</i></p>
+        <p>
+            <!-- NEW ADDED -->	
+            <button onclick="topFunction()" id="myBtn" class="btn btn-outline-primary">Back to Top</button>
+        </p>
+    </footer>  
+    <script type="text/javascript" src="../js/topmenu.js"></script>
+    <script type="text/javascript" src="../js/BooklistDetail.js"></script>
+ </body>
+</html>

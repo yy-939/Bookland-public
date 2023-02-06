@@ -1,0 +1,201 @@
+@import "./home.css"; 
+
+body {
+	background-color: white;
+	margin: 0;
+}
+
+.textDecoration{
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+    text-align:left;
+}
+
+#bookTable {
+    top: 60px;
+    width: 100%;
+    background: white;
+    padding-left: 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    border: 2px solid rgb(116, 116, 116);
+    padding: 5px;
+}
+.descriptionsBox {
+    max-width: 500px;
+    height: auto;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: small;
+}
+.book_card {
+    left: 0%;
+    top: 0px;
+    margin-bottom: 1.5rem!important;
+    flex: 0 0 auto;
+    width: 800px;
+    min-height: 300px;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    box-sizing: border-box;
+    display: block;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    background-color: gainsboro;
+    background-image: linear-gradient(180deg,#f1f1f1, #ffffff);
+    font-family: 'Lobster', cursive;
+    border: rgba(255, 255, 255, 0) 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 0.50rem 0.50rem rgba(0,0,0,.075)!important;
+}
+
+ .bookinfo, .td, .th{
+    border-radius: 20px;
+    color: gainsboro;
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    width: 550px;
+    min-height: 50px;
+    padding: 10px;
+    margin-top: 10%;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: small;
+}
+
+.cover {
+    width: 150px;
+    height: auto;
+    position: relative;
+    float: right;
+    top: 25%;
+    right: 5%;
+    border:1px white solid;
+    box-shadow: 4px 4px 20px rgb(114, 114, 114);
+}
+
+.delete{
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin-right: 43px;
+}
+
+#adminActionsWrap{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin-left: 0 !important;
+}
+
+.divideLine{
+    z-index: -1;
+    border: .5px solid rgb(192, 192, 192);
+    margin-bottom: 8px;
+}
+
+.bookTitle, .pagelink{
+    color: #5088e9;
+    background: none;
+}
+
+#pageFliper{
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+#tableResult{
+    margin: auto;
+}
+.normalTR{
+    display: block;
+}
+
+.endTR{
+    display: none;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    margin: 0px auto;
+    position: fixed;
+    background-color: white;
+    width: 50%;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    box-shadow:0 0 800px 800px rgba(153, 153, 153, 0.521);
+  }
+  .div_form{
+      display: inline-block;
+      width:50%;
+      height: 100%;
+      background-color: white;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    padding: 10px;
+    background-color: white;
+    border-right: #ddd 2px solid;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  #addBook{
+      background-color: rgb(235, 235, 235);
+      border-bottom: 1px solid rgb(116, 116, 116);
+      border-top: 1px solid rgb(116, 116, 116);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10%;
+  }
+  .success{
+      color: #04AA6D;
+      font-size: medium;
+  }
+
+  .fail{
+      color:red;
+      font-size: medium;
+  }
+
+  #dom_display{
+      display: none;
+}

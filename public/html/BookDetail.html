@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+ 	<meta charset="UTF-8">
+    <title> BookLand</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/BookDetail.css">
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- For bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ </head>
+
+<body>
+   <!-- The Top Menu -->
+ 	<div id="topMenu">
+        <ul>
+            <li>
+                <div class="logoContainer">
+                  <img class="logo" src="/public/img/static/bookLandLogo.png" alt="logo">
+                </div>
+            </li>
+            <!-- New -->
+            <li><a href=''>Home</a></li>
+            <li><a href=''>Books</a></li>
+            <li><a href=''>Booklists</a></li>
+            <li class="top_book">
+                <div class="dropdown">
+                    <button onclick="bookFunction()" class="dropbtn">Search for books</button>
+                  </div>
+            </li>
+            <li class="top_list">
+                <div class="dropdown">
+                    <button onclick="listFunction()" class="dropbtn">Search for lists</button>
+                  </div>
+            </li>
+          </ul>
+  </div>
+  <div class="search-book">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_bookfilterFunction()">
+      </span>
+    </div>
+  </div>
+  <div class="search-list">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_listfilterFunction()">
+      </span>
+    </div>
+  </div>
+
+    <!-- Book Cover, book basic infor includes author, publish time and book ID -->
+    <div class="bookInfo" id="bookInfo"></div>
+
+    <div class="title"><strong class="des">Description:</strong></div>
+    <!-- brief description of book -->
+    <div class="bookDescription" id="bookDescription"></div>
+
+     
+    <!-- Post section -->
+    <div id="posts">
+        <div class="row g-5">
+            <!--Left part -->
+            <div class="col-md-8" id="left-part">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom, textDecoration2">
+                    People in BookLand
+                  </h3>
+              <ul id="post-body">
+                <!-- Max 3 posts per page-->
+             </ul>
+             <div id="pageFliper"></div> 
+            </div>
+            <!--Right part, add post -->
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                  <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic" id="addPostTitle">About</h4>
+                    <div class="mb-0, justify">This website, BookLand is build for readers to share their thoughts on readings with others. Through this platform, readers can view various kinds of book lists made by other readers, create their own book lists, and make friends that have similar reading tastes.</div>
+            </div>
+            
+        </div>   
+    </div> 
+</div>   
+</div> 
+    <!-- <script type="text/javascript" src="../HomeAndLogin/topmenu.js"></script> -->
+    
+    <footer class="blog-footer">
+        <p><i>&copy; BookLand built by team10</i></p>
+        <p>
+            <!-- NEW ADDED -->	
+            <button onclick="topFunction()" id="myBtn" class="btn btn-outline-primary">Back to Top</button>
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="../js/topmenu.js"></script>
+    <script type="text/javascript" src="../js/BookDetail.js"></script>
+ </body>
+</html>

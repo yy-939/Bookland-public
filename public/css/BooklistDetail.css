@@ -1,0 +1,217 @@
+@import "./home.css"; 
+
+.title{
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+    text-align:left;
+}
+
+#booklistInfo{
+    padding: 5px;
+    /* background-color: rgb(147, 190, 149); */
+}
+  
+#booklistIntro, #likesAndCollects{
+    display: flex;
+    margin-left: 20px;
+    width: 80%;
+    border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+.listId, .creator, .createTime, .likes, .collects, .listName{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: medium;
+    width: 30%;
+    text-align: bottom;
+}
+
+.editDiv{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    size:50px;
+    float: right;
+    margin-right: 5px;
+}
+
+.publish{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#description{
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    overflow: auto;
+    width: 80%;
+    background-color: rgba(238, 238, 238, 0.452);
+    font-family: 'Lobster', cursive;
+    border: rgba(238, 238, 238, 0) 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 0.50rem 0.50rem rgba(0,0,0,.075)!important;
+    min-height: 100px;
+}
+
+strong.des{
+    font-size: x-large;
+    text-decoration: underline;
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+
+#descriptionText{
+    margin-left: 20px;
+}
+
+#books{
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: rgba(238, 238, 238, 0.452);
+    font-family: 'Lobster', cursive;
+    border: rgba(255, 253, 253, 0.288) 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 0.50rem 0.50rem rgba(0,0,0,.075)!important;
+}
+
+.bookli{
+    background-image:url('../public/img/static/open-book.png');
+    background-size: 20px;
+    list-style: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+    margin-top: 5px;
+}
+
+a.book {
+    margin-left:40px;
+    color: #5088e9;
+}
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    margin: 0px auto;
+    position: fixed;
+    background-color: white;
+    width: 70%;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    box-shadow:0 0 800px 800px rgba(153, 153, 153, 0.521);
+  }
+  .div_form{
+      display: inline-block;
+      width:50%;
+      height: 100%;
+      background-color: white;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    padding: 10px;
+    background-color: white;
+    border-right: #ddd 2px solid;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  #submit_editBooks{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+  #submit_editBooks{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+#cancel_editBooks{
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  #youmaylike{
+    float: right;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+}
+#randomBooks{
+    list-style: none;
+    top:1px;
+    right: 1px;
+    padding: 10px;
+    height: 100%;
+    vertical-align: middle;
+}
+#bookButton{
+    bottom: 0;
+    position: relative;
+    top: 50%;
+}
+.addListID{
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    width: 70%;
+    border: transparent !important;
+}
+.bookIDhide{
+    display: none;
+}
+#dom_display{
+    display: none;
+}

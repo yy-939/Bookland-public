@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "cloudinary": "^1.29.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "moment": "^2.29.2",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.2.8"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "csc309-team10-git",
+  "description": "## Overall Purpose The overall objective of the project is to build a website for readers to share their thoughts on readings with others. Through this platform, readers can view various kinds of book lists made by other readers, create their own book lists, and make friends that have similar reading tastes.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csc309-winter-2022/team10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csc309-winter-2022/team10/issues"
+  },
+  "homepage": "https://github.com/csc309-winter-2022/team10#readme",
+  "devDependencies": {}
+}

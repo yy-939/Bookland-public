@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>BookLand</title>
+    <meta name="author" content="Team10">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="/public/css/home.css"> 
+
+    <!-- For reference -->
+   <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/blog/">-->
+
+    <!-- For bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--<link href="../bootstrap-dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ </head>
+
+ <body>
+ 	<!-- The Top Menu -->
+ 	<div id="topMenu">
+        <ul>
+            <li>
+                <div class="logoContainer">
+                  <img class="logo" src="/public/img/static/bookLandLogo.png" alt="logo">
+                </div>
+            </li>
+            <!-- New -->
+            <li><a class="active" href=''>Home</a></li>
+            <li><a href=''>Books</a></li>
+            <li><a href=''>Booklists</a></li>
+            <li class="top_book">
+                <div class="dropdown">
+                    <button onclick="bookFunction()" class="dropbtn">Search for books</button>
+                  </div>
+            </li>
+            <li class="top_list">
+                <div class="dropdown">
+                    <button onclick="listFunction()" class="dropbtn">Search for lists</button>
+                  </div>
+            </li>
+          </ul>
+  </div>
+  <div class="search-book">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_bookfilterFunction()">
+      </span>
+    </div>
+  </div>
+  <div class="search-list">
+    <div calss="dropdown">
+      <span id="myDropdown" class="hide">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="t_listfilterFunction()">
+      </span>
+    </div>
+  </div>
+
+
+	<!-- Recommendation books section -->
+ 	<div id="recommendation"> 
+		<h1 class="textDecoration">  Recommended books </h1>
+        <!-- NEW ADDED -->
+        <!-- Max 3 books (1 top + 2) -->
+        <!--Top -->
+        <div class="TopBookcontainer">
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+            
+            </div> 
+        </div>    
+        <!-- 2 books -->
+        <div class="row mb-2">
+            
+ 	      </div>
+    </div>
+
+    <!-- Post section -->
+    <div id="posts">
+        <div class="row g-5">
+            <!--Left part -->
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom, textDecoration2">
+                    People in BookLand
+                  </h3>
+              <ul>
+                <!-- Max 3 posts -->
+                <li></li>
+                <li></li>
+                <li></li>
+             </ul>
+            </div> 
+            <!--Right part -->
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                  <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">About</h4>
+                    <p class="mb-0, justify">This website, BookLand is build for readers to share their thoughts on readings with others. Through this platform, readers can view various kinds of book lists made by other readers, create their own book lists, and make friends that have similar reading tastes.</p>
+                    </div>  
+                </div>   
+            </div>      
+    </div> 
+
+  <footer class="blog-footer">
+      <p><i>&copy; BookLand built by team10</i></p>
+      <p>
+          <button onclick="topFunction()" id="myBtn" class="btn btn-outline-primary">Back to Top</button>
+      </p>
+  </footer>
+    
+  <script type="text/javascript" src="/public/js/topmenu.js"></script>
+  <script type="text/javascript" src="/public/js/index_book.js"></script>
+  <script type="text/javascript" src="/public/js/index_post.js"></script>
+  </body>
+
+</html>

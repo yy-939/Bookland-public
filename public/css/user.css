@@ -1,0 +1,173 @@
+@import "home.css";
+@import "BooklistMainPage.css";
+@import "BookMainPage.css";
+
+#userMainPage {
+    padding: 5px;
+    background-color: white;
+}
+
+#userInfo {
+    width: 300px;
+	margin-left: 80px;
+	display: inline-block;
+
+}
+
+.profilePicContainer {
+	width: 300px;
+
+}
+
+.profilePic {
+    width: 300px;
+	border-radius: 50%;
+	height: 300px;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+
+#username {
+	font-size: 300%;
+	font-weight: bold;
+	margin-top: 30px;
+	width: 300px;
+	
+}
+
+.manageUserId {
+	color: transparent;
+}
+
+#id {
+	color: transparent;
+	float: right;
+}
+
+#signature, #sigForm {
+	margin-top: 20px;
+	font-size: 150%;
+
+}
+
+#profileButton {
+	font-size: 150%;
+	margin-top: 40px;
+	margin-bottom: 200px;
+}
+
+
+#menu {
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+#menubar ul {
+	margin: 0px;
+	padding: 3px;
+	margin-top: 10px;
+	list-style: none; 
+	margin-left: 10px;
+}
+
+#menubar ul li {
+	margin-right: 40px;
+	display: inline-block;	
+}
+
+#contents {
+	margin-top: 40px;
+}
+
+#contents ul {
+	list-style: none; 
+}
+
+#contents ul li {
+	margin-bottom: 20px;
+}
+
+.likeBar {
+	margin-top: 20px;
+}
+
+/** Display lists **/
+.sortButton {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: small;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.bookId {
+	color: transparent;
+}
+
+.listID {
+	color: transparent;
+}
+
+.post {
+	min-height: 200px;
+	overflow: auto;
+	padding-bottom: 5px;
+    background-color: white;
+    margin-top:10px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    width: 800px;
+}
+
+.postContent {
+	margin-top: 20px;
+	width: 650px;
+	float: left;
+    margin-bottom: 5px;
+}
+
+/** Manage Users **/
+.userNameDiv {
+    width: 200px;
+}
+
+.userInfo {
+	display: inline-block;
+}
+.manageButton {
+	display: inline-block;
+	margin-left: 40px;
+}
+#userManage {
+	margin-left: 100px;
+}
+
+/** Edit Signature **/
+#sigForm {
+	height: 200px;;
+	width: 350px;
+	font-size: 18px;
+}
+
+.pagelink{
+	text-decoration: dashed;
+   }
+
+/** Some font color classes for you to use. **/
+.linkColor {
+	color: #5088e9;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+

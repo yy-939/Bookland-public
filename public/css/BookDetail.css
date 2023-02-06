@@ -1,0 +1,94 @@
+@import "home.css"; 
+@import "BooklistMainPage.css";
+
+.postContent {
+	margin-top: 20px;
+	width: 450px;
+	float: left;
+    margin-bottom: 5px;
+}
+.active2{
+    background-color: white;
+}
+
+#posts .textDecoration2{
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Noto Serif Display', serif;
+    border-bottom: 2px solid rgb(199, 196, 196);
+}
+
+
+#topMenu li:last-child {
+    float:right;
+    background-color: white;
+}
+
+#DesButton{
+    margin-left: 50px;
+}
+
+#sigForm{
+    margin-left: 50px;
+}
+
+.title{
+    margin-left: 50px;
+}
+
+#delete3{
+    float:right;
+    margin-right: 5px;
+}
+
+.normalTR{
+    display: block;
+}
+
+.endTR{
+    display: none;
+}
+
+#pageFliper{
+    text-align: center;
+}
+.pagelink{
+    color: #5088e9;
+    background: none;
+    text-decoration: dashed;
+}
+/* ################################### */
+.bookInfo{
+    padding: 5px;
+    /* background-color: rgb(147, 190, 149); */
+}
+
+.coverContainer{
+    display: inline-block;
+    margin-left: 50px;
+}
+.cover {
+	width: 100px;
+    height: 153px;
+    border-radius: 2px;
+}
+  
+.bookIntro {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.publish{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.bookDescription{
+    margin-left: 50px;
+    margin-top: 20px;
+    overflow: auto;
+    width: 700px;
+}
+
+.des{
+    font-size: 150%;
+}
